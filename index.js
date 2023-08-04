@@ -1,6 +1,6 @@
 const sessionName = "yusril";
-const donet = "https://saweria.co/sansekai";
-const owner = ["6287878817169"]; // Put your number here ex: ["62xxxxxxxxx"]
+const donet = "https://saweria.co/JSBOT";
+const owner = ["6283116847160","6283874632703"]; // Put your number here ex: ["62xxxxxxxxx"]
 const {
   default: sansekaiConnect,
   useMultiFileAuthState,
