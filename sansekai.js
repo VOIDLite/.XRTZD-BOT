@@ -72,7 +72,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
       switch (command) {
         case "help":
         case "menu":
-          m.reply(`*Whatsapp Bot OpenAI*
+          m.reply(`*XDCRL-BOT*
             
 *(ChatGPT)*
 Cmd: ${prefix}ai 
@@ -88,7 +88,7 @@ Menampilkan source code bot yang dipakai`)
           break;
         case "ai": case "openai": 
           try {
-            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
+            if (setting.keyopenai === "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") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
             if (!text) return reply(`Chat dengan AI.\n\nContoh:\n${prefix}${command} Apa itu resesi`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
@@ -123,7 +123,7 @@ Menampilkan source code bot yang dipakai`)
           break;
         case "img": case "ai-img": case "image": case "images":
           try {
-            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
+            if (setting.keyopenai === "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") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
             if (!text) return reply(`Membuat gambar dari AI.\n\nContoh:\n${prefix}${command} Wooden house on snow mountain`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
@@ -148,7 +148,7 @@ Menampilkan source code bot yang dipakai`)
         }
           break;
           case "sc": case "script": case "scbot":
-           m.reply("Bot ini menggunakan script dari https://github.com/Sansekai/Wa-OpenAI");
+           m.reply("Bot ini menggunakan script dari https://github.com/VOIDlite");
           break
         default: {
           if (isCmd2 && budy.toLowerCase() != undefined) {
